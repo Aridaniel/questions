@@ -1,0 +1,91 @@
+header {
+  background-color: #1275a3;
+}
+
+h1 {
+  text-align: center;
+  justify-items: center;
+}
+
+/* section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* Variables to call for */
+/* The boxes withe styling, that call the varuables above */
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding:5rem; */
+  border-style: groove;
+  height: 47vh;
+  background-color: #ddac26;
+}
+
+.box2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: none;
+  border-style: groove;
+  text-align: center;
+  height: 47vh;
+  background-color: #ddac26;
+}
+.box2 input {
+  margin: 1rem;
+}
+.box2 button {
+  background-color: #7c91ee;
+  color: white;
+}
+.box2 button:hover {
+  background: #cecb1d;
+}
+
+.box3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: none;
+  border-style: groove;
+  text-align: center;
+  height: 47vh;
+  background-color: #ddac26;
+}
+.box3 input {
+  margin: 1rem;
+}
+.box3 button {
+  background-color: #7c91ee;
+  color: white;
+}
+.box3 button:hover {
+  background: #2be2b4;
+}
+
+.box4 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-style: groove;
+  text-align: center;
+  height: 47vh;
+  background-color: #ddac26;
+}
+.box4 input {
+  margin: 1rem;
+}
+.box4 button {
+  background-color: #7c91ee;
+  color: white;
+}
+.box4 button:hover {
+  background: #9b3030;
+}
+
+/*# sourceMappingURL=style.css.map */

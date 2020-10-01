@@ -1,0 +1,148 @@
+header
+{
+   background-color: rgb(18, 117, 163);
+}
+
+h1
+{
+ 
+ text-align: center;
+
+ justify-items: center;   
+
+}
+
+
+
+/* section
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+ 
+/* Variables to call for */
+
+$btnColor:  rgb(124, 145, 238);
+$btnTextColor: white;
+$background: rgb(221, 172, 38);
+$heightOfBox: 47vh;
+$paddingInBoxes:none;
+$centerTextInBoxes:center;
+$borderLineBoxes:groove ;
+$displayBoxes:flex;
+$JustifyBoxItem:center;
+$alignBoxItem:center;
+$marginInput: 1rem;
+ 
+
+
+
+
+/* The boxes withe styling, that call the varuables above */
+
+.box1 
+{
+    display:$displayBoxes ;
+
+    justify-content: $JustifyBoxItem;
+    align-items: $alignBoxItem;
+
+    
+
+    /* padding:5rem; */
+    border-style: $borderLineBoxes;
+    height:$heightOfBox ;
+    background-color: $background;
+    
+    
+
+   
+
+    
+
+
+}
+
+.box2 
+
+{
+    justify-content: $JustifyBoxItem;
+    align-items: $alignBoxItem;
+    display:$displayBoxes ;
+    padding:$paddingInBoxes ;
+    border-style: $borderLineBoxes;
+    text-align: $centerTextInBoxes;
+    height:$heightOfBox ;
+    background-color: $background;
+
+    input 
+        {
+         margin: $marginInput ;   
+        }
+
+    button
+    {
+        
+    background-color: $btnColor;
+    color: $btnTextColor ;
+    &:hover{
+        background: rgb(206, 203, 29);
+    }
+    }
+}
+
+.box3 
+{
+    justify-content: $JustifyBoxItem;
+    align-items: $alignBoxItem;
+    display:$displayBoxes ;
+    padding:$paddingInBoxes;
+    border-style: $borderLineBoxes;
+    text-align: $centerTextInBoxes;
+    height:$heightOfBox ;
+    background-color: $background;
+
+    input 
+        {
+         margin: $marginInput ;   
+        }
+    
+    button
+    {
+    background-color: $btnColor;
+    color: $btnTextColor ;
+    &:hover{
+        background: rgb(43, 226, 180);
+    }
+    }
+}
+
+.box4 
+
+{
+    justify-content: $JustifyBoxItem;
+    align-items: $alignBoxItem;
+    display:$displayBoxes ;
+    border-style: $borderLineBoxes;
+    text-align: $centerTextInBoxes;
+    height:$heightOfBox ;
+    background-color: $background;
+
+    input 
+        {
+         margin: $marginInput ;   
+        }
+
+    button
+    {
+        
+        background-color: $btnColor;
+        color: $btnTextColor ;
+        &:hover
+        {
+        
+            background: rgb(155, 48, 48);
+        }
+    }
+}
