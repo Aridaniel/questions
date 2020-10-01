@@ -8,10 +8,6 @@ h1 {
   justify-items: center;
 }
 
-.w20 {
-  height: 5rem;
-}
-
 /* Imports the variables from the other scss file */
 /* Button */
 /* Style of boxes */
@@ -34,7 +30,6 @@ h1 {
   flex-direction: column;
   padding: none;
   border-style: groove;
-  /* text-align: $centerTextInBoxes; */
   height: 47vh;
   background-color: #ddac26;
 }
