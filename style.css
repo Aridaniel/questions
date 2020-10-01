@@ -1,4 +1,5 @@
 header {
+  padding: none;
   background-color: #1275a3;
 }
 
@@ -7,32 +8,33 @@ h1 {
   justify-items: center;
 }
 
-/* section
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.w20 {
+  height: 5rem;
 }
 
-/* Variables to call for */
+/* Imports the variables from the other scss file */
+/* Button */
+/* Style of boxes */
+/* Mixin for the boxes */
 /* The boxes withe styling, that call the varuables above */
 .box1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding:5rem; */
+  flex-direction: column;
   border-style: groove;
   height: 47vh;
   background-color: #ddac26;
 }
 
 .box2 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  flex-direction: column;
   padding: none;
   border-style: groove;
-  text-align: center;
+  /* text-align: $centerTextInBoxes; */
   height: 47vh;
   background-color: #ddac26;
 }
@@ -44,16 +46,16 @@ h1 {
   color: white;
 }
 .box2 button:hover {
-  background: #cecb1d;
+  background: #2be2b4;
 }
 
 .box3 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  flex-direction: column;
   padding: none;
   border-style: groove;
-  text-align: center;
   height: 47vh;
   background-color: #ddac26;
 }
@@ -69,11 +71,11 @@ h1 {
 }
 
 .box4 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  flex-direction: column;
   border-style: groove;
-  text-align: center;
   height: 47vh;
   background-color: #ddac26;
 }
@@ -85,7 +87,7 @@ h1 {
   color: white;
 }
 .box4 button:hover {
-  background: #9b3030;
+  background: #2be2b4;
 }
 
 /*# sourceMappingURL=style.css.map */

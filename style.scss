@@ -1,5 +1,6 @@
 header
 {
+    padding: none;
    background-color: rgb(18, 117, 163);
 }
 
@@ -12,45 +13,44 @@ h1
 
 }
 
-
-
-/* section
+.w20
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    height: 5rem;
 }
- 
-/* Variables to call for */
 
-$btnColor:  rgb(124, 145, 238);
-$btnTextColor: white;
-$background: rgb(221, 172, 38);
-$heightOfBox: 47vh;
-$paddingInBoxes:none;
-$centerTextInBoxes:center;
-$borderLineBoxes:groove ;
-$displayBoxes:flex;
-$JustifyBoxItem:center;
-$alignBoxItem:center;
-$marginInput: 1rem;
+
+
+
  
+
+/* Imports the variables from the other scss file */
+@import "./variables";
+
+
+
+/* Mixin for the boxes */
+
+@mixin flexcenter($direction) 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    
+    flex-direction: $direction;
+}
+
 
 
 
 
 /* The boxes withe styling, that call the varuables above */
-
 .box1 
 {
-    display:$displayBoxes ;
-
-    justify-content: $JustifyBoxItem;
-    align-items: $alignBoxItem;
-
     
 
-    /* padding:5rem; */
+    @include flexcenter(column);
+
+    
     border-style: $borderLineBoxes;
     height:$heightOfBox ;
     background-color: $background;
@@ -67,12 +67,12 @@ $marginInput: 1rem;
 .box2 
 
 {
-    justify-content: $JustifyBoxItem;
-    align-items: $alignBoxItem;
-    display:$displayBoxes ;
+    
+    @include flexcenter(column);
+
     padding:$paddingInBoxes ;
     border-style: $borderLineBoxes;
-    text-align: $centerTextInBoxes;
+    /* text-align: $centerTextInBoxes; */
     height:$heightOfBox ;
     background-color: $background;
 
@@ -87,19 +87,19 @@ $marginInput: 1rem;
     background-color: $btnColor;
     color: $btnTextColor ;
     &:hover{
-        background: rgb(206, 203, 29);
+        background:  rgb(43, 226, 180);
     }
     }
 }
 
 .box3 
 {
-    justify-content: $JustifyBoxItem;
-    align-items: $alignBoxItem;
-    display:$displayBoxes ;
+    @include flexcenter(column);
+
+
     padding:$paddingInBoxes;
     border-style: $borderLineBoxes;
-    text-align: $centerTextInBoxes;
+    
     height:$heightOfBox ;
     background-color: $background;
 
@@ -121,11 +121,9 @@ $marginInput: 1rem;
 .box4 
 
 {
-    justify-content: $JustifyBoxItem;
-    align-items: $alignBoxItem;
-    display:$displayBoxes ;
+    @include flexcenter(column);
     border-style: $borderLineBoxes;
-    text-align: $centerTextInBoxes;
+    
     height:$heightOfBox ;
     background-color: $background;
 
@@ -142,7 +140,7 @@ $marginInput: 1rem;
         &:hover
         {
         
-            background: rgb(155, 48, 48);
+            background:  rgb(43, 226, 180);
         }
     }
 }

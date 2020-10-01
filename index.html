@@ -15,7 +15,11 @@
         </div>
     </header>
 
+    <!-- Grid system gegnum Bootstrap -->
     <section class="row containerForBoxes">
+
+
+        <!-- BOX 1 -->
 
         <div class="col-md-6 box1">
             
@@ -24,7 +28,7 @@
                 
             <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text">First and last name</span>
+                <span class="input-group-text">First fill in your first and last name</span>
             </div>
             <input type="text" aria-label="First name" class="form-control">
             <input type="text" aria-label="Last name" class="form-control">
@@ -32,37 +36,65 @@
                 
            
         </div>
+        <!-- Box2 -->
 
         <div class="col-md-6 box2">
             
-            <h3>Hvað ertu gamall?</h3>
+            <h3>How many times is many times?</h3>
             <input type="text">
-            <button>Svar</button>
+            <button onclick="myFunction()">Submit</button>
                   
         </div>
 
+        <!-- Box 3 -->
+
         <div class="col-md-6 box3">
             
-                <h3>Ertu pro í Javascript?</h3>
+               
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/pics/zen.jpg" class="d-block w-20" alt="..." height="230">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="pics/trump-meme.jpg" class="d-block w-20" alt="..." height="230">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/pics/pirate.jpg" class="d-block w-20" alt="..." height="230">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                  <p>Who is the stupid one ?</p>
                
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary">Já</button>
-                    <button type="button" class="btn btn-secondary">Miðlungs</button>
-                    <button type="button" class="btn btn-secondary">Nei</button>
+                    <button type="button" class="btn btn-secondary">Zen master</button>
+                    <button type="button" onclick="JAsksk" class="btn btn-secondary">Trump</button>
+                    <button type="button" class="btn btn-secondary">Pirate</button>
                   </div>
             
         </div>
+
+        <!-- BOX 4 -->
+
         <div class=" col-md-6 box4">
             
-                <!-- <h3>Hvað er Smári gamall?</h3> -->
+                
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-default"> <h3>Hvað er Smári gamall?</h3> </span>
-                    </div>
+                      <span class="input-group-text" id="inputGroup-sizing-default"> Hvað er smári gamall? </span>
+                    </div> 
                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                   </div>
 
-                <!-- Button trigger modal -->
+                <!-- Button trigger modal from Bootstrap-->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Svara
                 </button>
@@ -72,13 +104,13 @@
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Batman</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Answer</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
                         <div class="modal-body">
-                        ;) Glæsilegt svar
+                        VÁVÁ rosa gamall
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -90,7 +122,8 @@
                 
             
         </div>
-        
+
+       
         
     </section>
 
